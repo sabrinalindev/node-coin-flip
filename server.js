@@ -25,7 +25,7 @@ const server = http.createServer(function(req, res) {
 
             const sides = ['heads', 'tails']
 
-            let sidePicked = sides[Math.floor(Math.random() * sides.length)]
+            let sidePicked = sides[(Math.floor(Math.random() * sides.length))]
 
             if ( sidePicked == params['coinFlip']){
                 resultText = 'win'
@@ -34,18 +34,18 @@ const server = http.createServer(function(req, res) {
             }
 
             const objToJson = {
-                name:"Heads",
+                name:"heads",
                 resultText: `you ${resultText}`,
                 sidePicked: `the Flip was ${sidePicked}`
             }
             res.end(JSON.stringify(objToJson));
         }
-        else if (params['coinFlip' == 'tails']){
+        else if (params['coinFlip'] == 'tails'){
             res.writeHead(200, {'Content-Type':'application/json'});
 
             const sides = ['heads', 'tails']
 
-            let sidePicked = sides[Math.floor(Math.random() * sides.length)]
+            let sidePicked = sides[ (Math.floor(Math.random() * sides.length))]
 
              if ( sidePicked == params['coinFlip']){
                 resultText = 'win'
@@ -54,7 +54,7 @@ const server = http.createServer(function(req, res) {
             }
 
             const objToJson = {
-                name:"Tails",
+                name:"tails",
                 resultText: `you ${resultText}`,
                 sidePicked: `the Flip was ${sidePicked}`
             }
