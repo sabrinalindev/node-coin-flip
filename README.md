@@ -5,9 +5,9 @@ Users pick heads or tails, flip the coin, and see whether their guess matches th
 
 - Screenshots:
 - This is how it looks like:
-![Coin Flip](./img/coin_flip.jpeg)
-![You Win](./img/win.jpeg)
-![You Lose](./img/lose.jpeg)
+![Coin Flip](./img/cover.jpeg)
+![You Win](./img/heads.jpeg)
+![You Lose](./img/tails.jpeg)
 
 ## How It's Made
 
